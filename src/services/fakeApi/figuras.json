@@ -1,0 +1,116 @@
+ [
+  {
+    "id": 1,
+    "type": "figuras",
+    "name": "COMER",
+    "image": "bn2l1ns.png"
+  },
+  {
+    "id": 2,
+    "type": "figuras",
+    "name": "LAVAR O ROSTO",
+    "image": "6qvSGx7.png"
+  },
+  {
+    "id": 3,
+    "type": "figuras",
+    "name": "MENINA",
+    "image": "obyeV3Z.jpg"
+  },
+  {
+    "id": 4,
+    "type": "figuras",
+    "name": "MENINO",
+    "image": "11gVf6M.jpg"
+  },
+  {
+    "id": 5,
+    "type": "figuras",
+    "name": "LAVAR AS MÃOS",
+    "image": "GAoXXRN.jpg"
+  },
+  {
+    "id": 6,
+    "type": "figuras",
+    "name": "ESCOVAR OS DENTES",
+    "image": "e3Yi3km.png"
+  },
+  {
+    "id": 7,
+    "type": "figuras",
+    "name": "FAZER XIXI",
+    "image": "Vu4hN4Y.png"
+  },
+  {
+    "id": 8,
+    "type": "figuras",
+    "name": "FAZER COCÔ",
+    "image": "I8RDrXj.png"
+  },
+  {
+    "id": 9,
+    "type": "figuras",
+    "name": "DORMIR",
+    "image": "BP8qqjc.png"
+  },
+  {
+    "id": 10,
+    "type": "figuras",
+    "name": "ACORDAR",
+    "image": "1QfravF.png"
+  },
+  {
+    "id": 11,
+    "type": "figuras",
+    "name": "TROCAR DE ROUPA",
+    "image": "J1cABa8.png"
+  },
+  {
+    "id": 12,
+    "type": "figuras",
+    "name": "AGRADECER",
+    "image": "WomaXRO.jpg"
+  },
+  {
+    "id": 13,
+    "type": "figuras",
+    "name": "IR AO DENTISTA",
+    "image": "HEwVJct.png"
+  },
+  {
+    "id": 14,
+    "type": "figuras",
+    "name": "JOGAR BOLA",
+    "image": "gRiZwNw.png"
+  },
+  {
+    "id": 15,
+    "type": "figuras",
+    "name": "LER",
+    "image": "a2Rjo2O.png"
+  },
+  {
+    "id": 16,
+    "type": "figuras",
+    "name": "ANDAR DE BICICLETA",
+    "image": "U6kmwmj.png"
+  },
+  {
+    "id": 17,
+    "type": "figuras",
+    "name": "BRINCAR COM BLOCOS",
+    "image": "M7BOZUF.png"
+  },
+  {
+    "id": 18,
+    "type": "figuras",
+    "name": "BRINCAR NO ESCORREGA",
+    "image": "oUdqUuZ.png"
+  },
+  {
+    "id": 19,
+    "type": "figuras",
+    "name": "TIRAR SAPATOS",
+    "image": "fEzmuLh.png"
+  }
+]

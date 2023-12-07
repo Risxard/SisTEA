@@ -1,0 +1,28 @@
+[
+  {
+    "id": 4,
+    "type": "inicial",
+    "name": "EU ESTOU FELIZ",
+    "image": "Ip0JDIV.png"
+  },
+  {
+    "id": 5,
+    "type": "inicial",
+    "name": "EU ESTOU TRISTE",
+    "image": "7ohAt0n.png"
+
+  },
+  {
+    "id": 6,
+    "type": "inicial",
+    "name": "EU ESTOU MUITO TRISTE",
+    "image": "LNq79f2.png"
+  },
+  {
+    "id": 7,
+    "type": "inicial",
+    "name": "EU ESTOU ASSUSTADO",
+    "image": "cjKyqhi.png"
+
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "SisTEA",
+    "slug": "SisTEA",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icons/reactNative.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/icons/reactNative.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/icons/reactNative.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.risxard.SisTEA"
+    },
+    "web": {
+      "favicon": "./src/assets/icons/reactNative.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d4c05315-9739-436a-a299-53cd340b888c"
+      }
+    }
+  }
+}
