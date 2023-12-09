@@ -8,8 +8,7 @@ const Home = ({navigation}) => {
   return (
     <SafeAreaView style={HomeStyle.container}>
       <Button title="Soletrar"  onPress={() => navigation.navigate('')}/>
-      <Button title="Pecs"  onPress={() => navigation.navigate('Pecs')}/>
-      <Button title="DropArea"  onPress={() => navigation.navigate('DropArea')}/>
+      <Button title="Tira de sentença"  onPress={() => navigation.navigate('Pecs')}/>
     </SafeAreaView>
   );
 };
