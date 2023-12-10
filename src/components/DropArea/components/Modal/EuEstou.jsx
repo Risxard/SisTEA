@@ -8,21 +8,18 @@ import {
   SafeAreaView,
 } from "react-native";
 
-import popModal from './style'
+import popModal from "./style";
 import styles from "../../DropArea";
 
 import array from "../../../../services/fakeApi/EuEstou.json";
 
-const EuEstou = ({newItemCallBack}) => {
+const EuEstou = ({ newItemCallBack }) => {
   const [visible, setVisible] = useState(false);
-
   const image_path = "https://imgur.com/";
 
-    const handleInicial = (item) => {
-        newItemCallBack(item)
-    }
-
-
+  const handleInicial = (item) => {
+    newItemCallBack(item);
+  };
 
   return (
     <>
@@ -30,7 +27,6 @@ const EuEstou = ({newItemCallBack}) => {
         style={styles.euQueroItem}
         key={1157}
         onPress={() => setVisible(true)}
-
       >
         <Text style={styles.euQueroText}>EU ESTOU</Text>
         <Image
@@ -38,16 +34,21 @@ const EuEstou = ({newItemCallBack}) => {
           style={styles.euQueroImage}
         />
       </TouchableOpacity>
-      <Modal transparent visible={visible}>
-        <SafeAreaView style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }} onTouchEnd={() => {setVisible(false)}} >
-          <View style={popModal.popUp}>
 
+      <Modal transparent visible={visible}>
+        <SafeAreaView
+          style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
+          onTouchEnd={() => {
+            setVisible(false);
+          }}
+        >
+          <View style={popModal.popUp}>
             {array.map((card) => {
               return (
                 <TouchableOpacity
                   style={popModal.popUpItem}
                   key={card.id}
-                  onPress={()=>  handleInicial([card])}
+                  onPress={() => handleInicial([card])}
                 >
                   <Text style={styles.euQueroText}>{card.name}</Text>
                   <Image

@@ -57,21 +57,20 @@ const styles = ScaledSheet.create({
       resizeMode: 'contain',
     },
     dropArea: {
-      flex: 0.5,
+      flex: 1,
       width: '100%',
-      minHeight: '350@s',
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
     },
     lineReader: {
       width: "100%",
-      minHeight: '130@s',
+      height: '100@vs',
       flexDirection: "row",
       marginTop: "auto",
-      marginBottom: "50@vs",
+      marginBottom: "auto",
       position: "relative",
-      gap: 5,
+
       backgroundColor: "#D9D9D9",
 
       alignItems: 'center',

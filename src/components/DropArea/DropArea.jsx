@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./DropArea";
-import { View, Text, Image, TouchableOpacity, Pressable } from "react-native";
+import { View, Text, Image, TouchableOpacity, Pressable, TouchableWithoutFeedback } from "react-native";
 import DeleteBtn from "./components/Btns/DeleteBtn";
 import SpeakBtn from "./components/Btns/SpeakBtn";
 
@@ -77,45 +77,55 @@ const DropArea = (props) => {
     setSelectedCard(null);
   };
 
+  function handleResetSelectedCard() {
+    setSelectedCard(null);
+  }
+
   return (
-    <View style={styles.dropArea}>
-      <Display
-        selectedCallBack={handleSelectedCard}
-        selectedInicial={selectedInicial}
-        selectedFiguras={selectedFiguras}
-        selectedCard={selectedCard}
-      />
+    <TouchableWithoutFeedback onPress={handleResetSelectedCard}>
+      <View style={styles.dropArea}>
+        <Display
+          selectedCallBack={handleSelectedCard}
+          selectedInicial={selectedInicial}
+          selectedFiguras={selectedFiguras}
+          selectedCard={selectedCard}
+          resetSelectedCard={handleResetSelectedCard}
+        />
 
-      <Pressable style={styles.euQueroContainer}>
-        {figuraInicial.map((card) => {
-          return (
-            <TouchableOpacity
-              style={styles.euQueroItem}
-              key={card.id}
-              onPress={() => setSelectedInicial([card])}
-            >
-              <Text style={styles.euQueroText}>{card.name}</Text>
-              <Image
-                source={{ uri: `${image_path}${card.image}` }}
-                style={styles.euQueroImage}
-              />
-            </TouchableOpacity>
-          );
-        })}
+        <Pressable style={styles.euQueroContainer}>
+          {figuraInicial.map((card) => {
+            return (
+              <TouchableOpacity
+                style={styles.euQueroItem}
+                key={card.id}
+                onPress={() => setSelectedInicial([card])}
+              >
+                <Text style={styles.euQueroText}>{card.name}</Text>
+                <Image
+                  source={{ uri: `${image_path}${card.image}` }}
+                  style={styles.euQueroImage}
+                />
+              </TouchableOpacity>
+            );
+          })}
 
-        <EuEstou newItemCallBack={handleNewItem} />
+          <EuEstou newItemCallBack={handleNewItem} />
 
-        <View style={styles.actionList}>
-          <SpeakBtn
-            onPress={() => {
-              speak(toString(selectedInicial, selectedFiguras));
-            }}
-          />
+          <View style={styles.actionList}>
+            <SpeakBtn
+              onPress={() => {
+                speak(toString(selectedInicial, selectedFiguras));
+              }}
+            />
 
-          <DeleteBtn onPress={() => selectedCard && deleteCard(selectedCard)} />
-        </View>
-      </Pressable>
-    </View>
+            <DeleteBtn
+              onPress={() => selectedCard && deleteCard(selectedCard)}
+              selectedCard={selectedCard}
+            />
+          </View>
+        </Pressable>
+      </View>
+    </TouchableWithoutFeedback>
   );
 };
 
