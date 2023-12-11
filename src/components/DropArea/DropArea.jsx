@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from "react";
 import styles from "./DropArea";
-import { View, Text, Image, TouchableOpacity, Pressable, TouchableWithoutFeedback } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  Pressable,
+  TouchableWithoutFeedback,
+  ScrollView,
+} from "react-native";
 import DeleteBtn from "./components/Btns/DeleteBtn";
 import SpeakBtn from "./components/Btns/SpeakBtn";
 
 import figuraInicial from "../../services/fakeApi/figuraInicial.json";
-import EuEstou from "./components/Modal/EuEstou";
+import EuEstou from "./components/Modal/EuEstou/EuEstou";
 
 import { toString, speak } from "../../functions/TTS";
 import Display from "./components/Display/Display";
@@ -93,23 +101,26 @@ const DropArea = (props) => {
         />
 
         <Pressable style={styles.euQueroContainer}>
-          {figuraInicial.map((card) => {
-            return (
-              <TouchableOpacity
-                style={styles.euQueroItem}
-                key={card.id}
-                onPress={() => setSelectedInicial([card])}
-              >
-                <Text style={styles.euQueroText}>{card.name}</Text>
-                <Image
-                  source={{ uri: `${image_path}${card.image}` }}
-                  style={styles.euQueroImage}
-                />
-              </TouchableOpacity>
-            );
-          })}
-
-          <EuEstou newItemCallBack={handleNewItem} />
+          <ScrollView style={styles.HorizontalScroll} horizontal>
+            <View style={styles.container}>
+              {figuraInicial.map((card) => {
+                return (
+                  <TouchableOpacity
+                    style={styles.euQueroItem}
+                    key={card.id}
+                    onPress={() => setSelectedInicial([card])}
+                  >
+                    <Text style={styles.euQueroText}>{card.name}</Text>
+                    <Image
+                      source={{ uri: `${image_path}${card.image}` }}
+                      style={styles.euQueroImage}
+                    />
+                  </TouchableOpacity>
+                );
+              })}
+              <EuEstou newItemCallBack={handleNewItem} />
+            </View>
+          </ScrollView>
 
           <View style={styles.actionList}>
             <SpeakBtn

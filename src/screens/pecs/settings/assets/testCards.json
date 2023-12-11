@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "type": "figuras",
+        "name": "COMER",
+        "image": "bn2l1ns.png"
+    },
+    {
+        "id": 2,
+        "type": "figuras",
+        "name": "LAVAR O ROSTO",
+        "image": "6qvSGx7.png"
+    },
+    {
+        "id": 3,
+        "type": "figuras",
+        "name": "MENINA",
+        "image": "obyeV3Z.jpg"
+    },
+    {
+        "id": 4,
+        "type": "figuras",
+        "name": "MENINO",
+        "image": "11gVf6M.jpg"
+    },
+    {
+        "id": 5,
+        "type": "figuras",
+        "name": "LAVAR AS MÃOS",
+        "image": "GAoXXRN.jpg"
+    },
+    {
+        "id": 6,
+        "type": "figuras",
+        "name": "ESCOVAR OS DENTES",
+        "image": "e3Yi3km.png"
+    },
+    {
+        "id": 7,
+        "type": "figuras",
+        "name": "FAZER XIXI",
+        "image": "Vu4hN4Y.png"
+    },
+    {
+        "id": 8,
+        "type": "figuras",
+        "name": "FAZER COCÔ",
+        "image": "I8RDrXj.png"
+    }
+]

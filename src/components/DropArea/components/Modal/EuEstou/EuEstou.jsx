@@ -9,9 +9,9 @@ import {
 } from "react-native";
 
 import popModal from "./style";
-import styles from "../../DropArea";
+import styles from "../../../DropArea";
 
-import array from "../../../../services/fakeApi/EuEstou.json";
+import array from "../../../../../services/fakeApi/EuEstou.json";
 
 const EuEstou = ({ newItemCallBack }) => {
   const [visible, setVisible] = useState(false);

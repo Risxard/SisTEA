@@ -1,6 +1,14 @@
 import { ScaledSheet } from 'react-native-size-matters';
 
 const styles = ScaledSheet.create({
+  container:{
+    paddingHorizontal: '80msr',
+    flexDirection: 'row',
+    gap:'3@s',
+  },
+  HorizontalScroll:{
+    flexDirection: 'row',
+  },
   selectedCard:{
     width: '80@s',
     height: '100@s',
@@ -23,11 +31,11 @@ const styles = ScaledSheet.create({
       justifyContent: "space-between",
       paddingHorizontal: 5,
       position: 'relative',
-      gap: 5,
+      gap:'5@s',
     },
     euQueroItem:{
       flex: 1,
-      width: 80,
+      width: '83@s',
       minWidth: 80,
       height: 120,
       alignItems: 'center',

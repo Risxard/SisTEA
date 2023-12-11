@@ -1,17 +1,18 @@
-import React from "react";
 import { createStackNavigator } from '@react-navigation/stack';
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign, Ionicons } from '@expo/vector-icons';
 
 import Home from './home/Home.jsx'
-import Pecs from './pecs/Pecs.jsx'
-import DropArea from "../components/DropArea/DropArea.jsx";
+import Pecs from '../screens/pecs/Pecs.jsx';
 
-
-
+import PecsSettings from '../screens/pecs/settings/settings.jsx'
 
 const Stack = createStackNavigator();
 
+
+
 const Routes = () => {
+
+
   return (
     <Stack.Navigator
       screenOptions={{
@@ -21,31 +22,39 @@ const Routes = () => {
       }}
     >
       <Stack.Screen name="Home" component={Home} />
-
       <Stack.Screen
         name="Pecs"
         component={Pecs}
-
         options={({ navigation }) => ({
-          title: 'Tira de senteça',
+          title: 'Tira de sentença',
           headerStyle: { backgroundColor: '#D40000' },
           headerTintColor: '#fff',
           headerTitleAlign: 'center',
-          headerLeft: ({ onPress }) => (
+          headerLeft: () => (
             <AntDesign
               name="leftcircle"
               size={24}
               color="white"
-              style={{ marginLeft: 10 }}
+              style={{ marginLeft: 20 }}
               onPress={() => {
                 navigation.goBack();
               }}
             />
           ),
+          headerRight: () => (
+            <Ionicons
+              name="settings"
+              size={24}
+              color="white"
+              style={{ marginRight: 20 }}
+              onPress={() => navigation.navigate('Configurações')}
+            />
+          ),
         })}
       />
 
-      <Stack.Screen name="DropArea" component={DropArea} />
+      <Stack.Screen name="Configurações" component={PecsSettings} />
+
     </Stack.Navigator>
   );
 };

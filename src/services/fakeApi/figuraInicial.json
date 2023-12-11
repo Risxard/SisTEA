@@ -11,5 +11,19 @@
     "name": "NÃO QUERO",
     "image": "C2RIk8T.png"
 
+  },
+  {
+    "id": 3,
+    "type": "inicial",
+    "name": "SIM",
+    "image": "z16gLII.png"
+
+  },
+  {
+    "id": 4,
+    "type": "inicial",
+    "name": "NÃO",
+    "image": "DJUf2uE.png"
+
   }
 ]

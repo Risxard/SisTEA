@@ -1,3 +1,4 @@
+
 import { ScaledSheet } from 'react-native-size-matters';
 
 const styles = ScaledSheet.create({
@@ -29,8 +30,6 @@ const styles = ScaledSheet.create({
     gap: '3@s',
   },
   li: {
-    width: '24.34%',
-    height: '100@vs',
     alignItems: 'center',
     borderWidth: 1,
     borderColor: 'transparent',
